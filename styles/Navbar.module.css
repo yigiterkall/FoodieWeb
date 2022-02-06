@@ -1,7 +1,7 @@
 .container {
   height: 100px;
   padding: 0px 50px;
-  background-color: coral;
+  background-color: cadetblue;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,11 +17,16 @@
 .item:nth-child(2) {
   flex: 3;
 }
+.item:nth-child(3) {
+  justify-content: flex-end;
+}
+
 .callButton {
   border-radius: 50px;
   padding: 10px;
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
 .texts {
   margin-left: 20px;
@@ -33,4 +38,33 @@
 }
 .text:last-child {
   font-weight: bold;
+}
+.list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: white;
+}
+.listItem {
+  margin: 10px;
+  font-weight: 700;
+}
+.cart {
+  position: relative;
+  cursor: pointer;
+}
+.counter {
+  position: absolute;
+  top: -20px;
+  right: -15px;
+  width: 10px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: whitesmoke;
 }

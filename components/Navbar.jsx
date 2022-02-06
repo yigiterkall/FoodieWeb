@@ -23,7 +23,7 @@ const Navbar = () => {
           <li className={styles.listItem}>
               Menu
           </li>
-          <Image src="/img/logo.png" alt="" width="160px" height="69px"/>
+          <Image src="/img/logo.png" alt="" width="10px" height="15px"/>
           <li className={styles.listItem}>
               Events
           </li>
@@ -35,7 +35,12 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className={styles.item}>right</div>
+      <div className={styles.item}>
+        <div className={styles.cart}>
+          <Image src="/img/cart.png" alt="" width="25px" height="25px"/>
+        <div className={styles.counter}>2</div>
+        </div>
+      </div>
       
   </div>;
 };
