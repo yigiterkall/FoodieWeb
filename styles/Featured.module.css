@@ -1,23 +1,26 @@
 .arrowContainer {
   position: absolute;
-  height: 20%;
-  width: 10%;
+  height: 10%;
+  width: 5%;
   top: 0;
   bottom: 0;
   margin: auto;
   cursor: pointer;
+  z-index: 2;
 }
 .container {
-  height: 700px;
-  background-color: pink;
+  height: calc(100vh - 100px);
+  background-color: lightskyblue;
+  overflow: hidden;
 }
 .wrapper {
   width: 300vw;
   height: 100%;
   display: flex;
+  transition: all 1.5s ease-in-out;
 }
 .imgContainer {
-  width: 70vw;
+  width: 80vw;
   height: 100%;
   position: relative;
   left: 150px;
